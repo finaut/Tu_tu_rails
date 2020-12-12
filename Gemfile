@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'slim-rails', '3.2.0'
 gem 'rspec-rails', '4.0.1'
+gem 'devise', '4.7.3'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
