@@ -27,5 +27,6 @@ Run all spec files in directory:
     
     rspec spec/model
 
-#Deployment instructions : 
+#Deployment instructions: 
+
 Tu_tu_rails is intended for deploying Heroku, it is already ready for this, you just need to upload it to the server and migrate, if you are going to run it on DigitalOcean, do not forget to rewrite config / database.yml    
