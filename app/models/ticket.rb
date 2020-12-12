@@ -4,4 +4,7 @@ class Ticket < ApplicationRecord
 
   # train
   belongs_to :train
+
+  # route
+  belongs_to :route
 end
