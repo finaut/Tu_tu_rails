@@ -1,0 +1,10 @@
+div class='row' style='margin-top: 1%'
+  div class='col-9'
+    p Train number: #{train.number}
+
+  div class='col-1'
+    = link_to 'Show',  train_path(train),  class: 'btn btn-primary'
+  div class='col-1'
+    = link_to 'Edit', edit_train_path(train), class: 'btn btn-warning'
+  div class='col-1'
+    = link_to 'Delete', train_path(train), method: :delete, class: 'btn btn-danger'

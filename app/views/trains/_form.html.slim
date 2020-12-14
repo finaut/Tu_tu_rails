@@ -5,10 +5,12 @@
   br
   = form.text_field :number
   br
-    = form.collection_select :route_id, Station.all, :id,  :title
+  br
+  = form.collection_select :route_id, Route.all, :id,  :title
+  br
   br
   - if @train.new_record?
     = form.submit 'Create', class: 'btn btn-success'
   -else
     = form.submit 'Update', class: 'btn btn-warning'
-  =link_to 'Back', trains_path, class: 'btn btn-primary '
+  =link_to 'Back', trains_path, class: 'btn btn-primary', style: 'margin-left: 1%'
