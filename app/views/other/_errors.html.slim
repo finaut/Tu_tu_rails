@@ -1,0 +1,6 @@
+-if resource.errors.any?
+  div class='alert alert-danger'
+    - resource.errors.full_message.each do |message|
+      ul
+        li
+          =message

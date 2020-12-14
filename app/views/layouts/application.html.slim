@@ -1,8 +1,15 @@
 doctype html
 html
   head
+
     title TuTuRails
     = render 'layouts/meta'
   body
 
-    = yield
+    = render 'other/header'
+
+    main
+      div class='container'
+        == yield
+
+    = render 'other/footer'
