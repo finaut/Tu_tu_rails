@@ -9,6 +9,7 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'jquery-rails', '4.4.0'
 gem 'slim-rails', '3.2.0'
 gem 'rspec-rails', '4.0.1'
 gem 'devise', '4.7.3'
