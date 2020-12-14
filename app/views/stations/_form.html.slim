@@ -1,0 +1,13 @@
+= form_for @station do |form|
+  = form.label :name
+  br
+  = form.text_field :name
+  br
+  br
+  -if @station.new_record?
+    = form.submit 'Create', class: 'btn btn-success'
+  -else
+    = form.submit 'Изменить', class: 'btn btn-warning'
+
+  = link_to 'Back', stations_path, class: 'btn btn-primary', style: 'margin-left: 1%'
+

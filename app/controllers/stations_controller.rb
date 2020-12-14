@@ -19,7 +19,7 @@ class StationsController < ApplicationController
   def create
     @station = Station.new set_params
     if @station.save
-      render @station, notice: 'station successfully create'
+      redirect_to @station, notice: 'station successfully create'
     else
       render :new
     end

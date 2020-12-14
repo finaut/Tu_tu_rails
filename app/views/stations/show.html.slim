@@ -1,0 +1,11 @@
+div class='container'
+  h1
+    = @station.name
+
+  h3 List all station for #{@station.name}:
+
+  - @station.routes.each do |route|
+    ul
+      li = route
+
+  = link_to 'Back', stations_path, class: 'btn btn-primary'
