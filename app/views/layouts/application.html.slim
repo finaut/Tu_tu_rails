@@ -5,9 +5,11 @@ html
     title TuTuRails
     = render 'layouts/meta'
   body
+
     = render 'other/header'
 
-    div class='container'
-      == yield
+    main
+      div class='container'
+        == yield
 
     = render 'other/footer'
