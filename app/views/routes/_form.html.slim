@@ -1,0 +1,15 @@
+= form_for @route do |form|
+  = render 'other/errors', resource: @route
+
+  = form.label :title
+  = form.text_field :title
+
+  = form.collection_select :station_id, Station.all, :id, :name
+  = form.collection_select :station_id, Station.all, :id, :name
+
+  =if @route.new_record?
+    = form.submit 'Create', class: 'btn btn-success'
+  =else
+    = form.submit 'Update', class: 'btn btn-warning'
+
+  = link_to 'Back', routes_path, class: 'btn btn-primary'

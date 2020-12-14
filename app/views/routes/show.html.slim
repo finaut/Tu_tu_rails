@@ -1,0 +1,10 @@
+h1  = @route.title
+
+h5 current station on route:
+
+ul
+  -@route.trains.each do |train|
+    li
+      =train.number
+
+= link_to 'Back', routes_path, class: 'btn btn-primary'
