@@ -1,14 +1,11 @@
-main
-  div class='container'
-    = link_to 'Create Station', new_station_path, class: 'btn btn-primary', id: 'button-create-station'
-
-    - @stations.each do |station|
-      div class='row' id='colum-height'
-        div class='col-9'
-          = station.name
-        div class='col-1'
-          = link_to 'Show', station, class: 'btn btn-sm btn-primary'
-        div class='col-1'
-          = link_to 'Edit', edit_station_path(station), class: 'btn btn-sm btn-warning'
-        div class='col-1'
-          = link_to 'Delete', station_path(station), method: :delete,  class: 'btn btn-sm btn-danger'
+= link_to 'Create Station', new_station_path, class: 'btn btn-primary', id: 'button-create-station'
+- @stations.each do |station|
+  div class='row' id='colum-height'
+    div class='col-9'
+      = station.name
+    div class='col-1'
+      = link_to 'Show', station, class: 'btn btn-sm btn-primary'
+    div class='col-1'
+      = link_to 'Edit', edit_station_path(station), class: 'btn btn-sm btn-warning'
+    div class='col-1'
+      = link_to 'Delete', station_path(station), method: :delete,  class: 'btn btn-sm btn-danger'
