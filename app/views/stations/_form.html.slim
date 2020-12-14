@@ -1,4 +1,6 @@
 = form_for @station do |form|
+  = render 'other/errors', resource: @station
+
   = form.label :name
   br
   = form.text_field :name
