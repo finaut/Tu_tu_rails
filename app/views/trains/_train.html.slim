@@ -1,6 +1,11 @@
 div class='row' style='margin-top: 1%'
-  div class='col-9'
+  div class='col-4'
     p Train number: #{train.number}
+  div class='col-5'
+    - if train.route == nil
+      p None Route
+    - else
+      p Current route: #{train.route.title}
 
   div class='col-1'
     = link_to 'Show',  train_path(train),  class: 'btn btn-primary'
