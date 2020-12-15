@@ -48,6 +48,6 @@ class RoutesController < ApplicationController
   end
 
   def set_params
-    params.require(:route).permit(:title)
+    params.require(:route).permit(:title, :station_id )
   end
 end

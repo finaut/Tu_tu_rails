@@ -1,10 +1,15 @@
 h1  = @route.title
 
 h5 current station on route:
+ul
+  -@route.stations.reverse.each do |station|
+    li
+      =station.name
 
+h5 current train on route:
 ul
   -@route.trains.each do |train|
     li
-      =train.number
+      = train.number
 
 = link_to 'Back', routes_path, class: 'btn btn-primary'
